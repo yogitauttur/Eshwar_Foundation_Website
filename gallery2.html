@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery2.css">
+    <script src="gallery2.js" defer></script>
+    <title>Gallery</title>
+</head>
+<body>
+  <br><br><center><h3>⊹ Gallery ⊹</h3></center><br><br> 
+  <div class="container">
+    <div class="full-img" id="fullImgBox">
+        <button class="prev" onclick="prev()"><</button>
+        <button class="next" onclick="next()">></button>
+            <img src="C:\xampp\htdocs\Eshwar\images\logo.jpeg" id="fullImg">
+            <span onclick="closeFullImg()">X</span></div>
+            <div class="controls">
+                <button class="active" data-name="all" onclick="filterImages('all')">Show All</button>
+                <button data-year="2024" onclick="filterImages('2024')">2024</button>
+                <button data-year="2023" onclick="filterImages('2023')">2023</button>
+                <button data-year="2022" onclick="filterImages('2022')">2022</button>
+                <button data-year="2021" onclick="filterImages('2021')">2021</button>
+                <button data-year="2020" onclick="filterImages('2020')">2020</button>
+                <button data-year="2019" onclick="filterImages('2019')">2019</button>
+                <button data-year="2018" onclick="filterImages('2018')">2018</button>
+                <button data-year="2017" onclick="filterImages('2017')">2017</button>
+                <button data-year="2016" onclick="filterImages('2016')">2016</button>
+                <button data-year="2015" onclick="filterImages('2015')">2015</button>
+                <button data-year="2014" onclick="filterImages('2014')">2014</button>
+                <button data-year="2013" onclick="filterImages('2013')">2013</button>
+                <button data-year="2012" onclick="filterImages('2012')">2012</button>
+                </div>                  
+                <div class="gallery" id="imageGallery">
+        <img src="C:\xampp\htdocs\Eshwar\images\logo.jpeg" class="slide" onclick="openFullImg(this.src)" title="Eshwar FOundation" >
+        <img src="C:\xampp\htdocs\Eshwar\images\e1.jpeg"  class="slide" onclick="openFullImg(this.src)">
+        <img src="C:\xampp\htdocs\Eshwar\images\e2.jpeg" class="slide" onclick="openFullImg(this.src)">
+        <img src="C:\xampp\htdocs\Eshwar\images\event3.jpg" class="slide" onclick="openFullImg(this.src)">
+        <img src="C:\xampp\htdocs\Eshwar\images\event2.jpg" class="slide" onclick="openFullImg(this.src)">
+        <img src="C:\xampp\htdocs\Eshwar\images\event3.jpg" class="slide" onclick="openFullImg(this.src)">
+        <img src="C:\xampp\htdocs\Eshwar\images\event4.jpg" class="slide" onclick="openFullImg(this.src)">       
+        <img src="C:\xampp\htdocs\Eshwar\images\event5.jpg" class="slide" onclick="openFullImg(this.src)">       
+        <img src="C:\xampp\htdocs\Eshwar\images\event6.jpg" class="slide" onclick="openFullImg(this.src)">
+        <img src="C:\xampp\htdocs\Eshwar\images\event7.jpg" class="slide" onclick="openFullImg(this.src)">
+        <img src="C:\xampp\htdocs\Eshwar\images\event8.jpg" class="slide" onclick="openFullImg(this.src)">
+        <img src="C:\xampp\htdocs\Eshwar\images\event9.jpg" class="slide" onclick="openFullImg(this.src)">
+        <img src="C:\xampp\htdocs\Eshwar\images\event10.jpg" class="slide" onclick="openFullImg(this.src)">        
+        <img src="C:\xampp\htdocs\Eshwar\images\event11.jpg" class="slide" onclick="openFullImg(this.src)">     
+        <img src="C:\xampp\htdocs\Eshwar\images\event12.jpg" class="slide" onclick="openFullImg(this.src)">    
+        <img src="C:\xampp\htdocs\Eshwar\images\img1.jpeg" class="slide" onclick="openFullImg(this.src)">     
+        <img src="C:\xampp\htdocs\Eshwar\images\img2.jpeg" class="slide" onclick="openFullImg(this.src)"> 
+        <img src="C:\xampp\htdocs\Eshwar\images\img3.jpeg" class="slide" onclick="openFullImg(this.src)">      
+        <img src="C:\xampp\htdocs\Eshwar\images\img7.jpeg" class="slide" onclick="openFullImg(this.src)">     
+        <img src="C:\xampp\htdocs\Eshwar\images\event8.jpg" data-year="2024" class="slide" onclick="openFullImg(this.src)">
+        <img src="C:\xampp\htdocs\Eshwar\images\event9.jpg" data-year="2024" class="slide" onclick="openFullImg(this.src)">
+        <img src="C:\xampp\htdocs\Eshwar\images\event10.jpg" data-year="2024" class="slide" onclick="openFullImg(this.src)">        
+        <img src="C:\xampp\htdocs\Eshwar\images\event11.jpg" data-year="2024" class="slide" onclick="openFullImg(this.src)">     
+        <img src="C:\xampp\htdocs\Eshwar\images\event12.jpg" data-year="2023" class="slide" onclick="openFullImg(this.src)">    
+        <img src="C:\xampp\htdocs\Eshwar\images\img1.jpeg"  data-year="2023" class="slide" onclick="openFullImg(this.src)">     
+        <img src="C:\xampp\htdocs\Eshwar\images\img2.jpeg" data-year="2023" class="slide" onclick="openFullImg(this.src)"> 
+        <img src="C:\xampp\htdocs\Eshwar\images\img3.jpeg" data-year="2023" class="slide" onclick="openFullImg(this.src)">      
+        <img src="C:\xampp\htdocs\Eshwar\images\img7.jpeg" data-year="2022" class="slide" onclick="openFullImg(this.src)">     
+        <img src="C:\xampp\htdocs\Eshwar\images\event8.jpg" data-year="2022" class="slide" onclick="openFullImg(this.src)">
+        <img src="C:\xampp\htdocs\Eshwar\images\event9.jpg" data-year="2022" class="slide" onclick="openFullImg(this.src)">
+        <img src="C:\xampp\htdocs\Eshwar\images\event10.jpg" data-year="2022" class="slide" onclick="openFullImg(this.src)">        
+        <img src="C:\xampp\htdocs\Eshwar\images\event11.jpg" data-year="2021" class="slide" onclick="openFullImg(this.src)">     
+        <img src="C:\xampp\htdocs\Eshwar\images\event12.jpg" data-year="2021" class="slide" onclick="openFullImg(this.src)">    
+        <img src="C:\xampp\htdocs\Eshwar\images\img1.jpeg"  data-year="2021" class="slide" onclick="openFullImg(this.src)">     
+        <img src="C:\xampp\htdocs\Eshwar\images\img2.jpeg" data-year="2021" class="slide" onclick="openFullImg(this.src)"> 
+        <img src="C:\xampp\htdocs\Eshwar\images\img3.jpeg" data-year="2020" class="slide" onclick="openFullImg(this.src)">      
+        <img src="C:\xampp\htdocs\Eshwar\images\img7.jpeg" data-year="2020" class="slide" onclick="openFullImg(this.src)">     
+        <img src="C:\xampp\htdocs\Eshwar\images\event8.jpg" data-year="2020" class="slide" onclick="openFullImg(this.src)">
+        <img src="C:\xampp\htdocs\Eshwar\images\event9.jpg" data-year="2020" class="slide" onclick="openFullImg(this.src)">
+        <img src="C:\xampp\htdocs\Eshwar\images\event10.jpg" data-year="2019" class="slide" onclick="openFullImg(this.src)">        
+        <img src="C:\xampp\htdocs\Eshwar\images\event11.jpg" data-year="2019" class="slide" onclick="openFullImg(this.src)">     
+        <img src="C:\xampp\htdocs\Eshwar\images\event12.jpg" data-year="2019" class="slide" onclick="openFullImg(this.src)">    
+        <img src="C:\xampp\htdocs\Eshwar\images\img1.jpeg"  data-year="2019" class="slide" onclick="openFullImg(this.src)">     
+        <img src="C:\xampp\htdocs\Eshwar\images\img2.jpeg" data-year="2018" class="slide" onclick="openFullImg(this.src)"> 
+        <img src="C:\xampp\htdocs\Eshwar\images\img3.jpeg" data-year="2018" class="slide" onclick="openFullImg(this.src)">      
+        <img src="C:\xampp\htdocs\Eshwar\images\img7.jpeg" data-year="2018" class="slide" onclick="openFullImg(this.src)">     
+        <img src="C:\xampp\htdocs\Eshwar\images\event8.jpg" data-year="2018" class="slide" onclick="openFullImg(this.src)">
+        <img src="C:\xampp\htdocs\Eshwar\images\event9.jpg" data-year="2017" class="slide" onclick="openFullImg(this.src)">
+        <img src="C:\xampp\htdocs\Eshwar\images\event10.jpg" data-year="2017" class="slide" onclick="openFullImg(this.src)">        
+        <img src="C:\xampp\htdocs\Eshwar\images\event11.jpg" data-year="2017" class="slide" onclick="openFullImg(this.src)">     
+        <img src="C:\xampp\htdocs\Eshwar\images\event12.jpg" data-year="2017" class="slide" onclick="openFullImg(this.src)">    
+        <img src="C:\xampp\htdocs\Eshwar\images\img1.jpeg"  data-year="2017" class="slide" onclick="openFullImg(this.src)">     
+        <img src="C:\xampp\htdocs\Eshwar\images\img2.jpeg" data-year="2016" class="slide" onclick="openFullImg(this.src)"> 
+        <img src="C:\xampp\htdocs\Eshwar\images\img3.jpeg" data-year="2016" class="slide" onclick="openFullImg(this.src)">      
+        <img src="C:\xampp\htdocs\Eshwar\images\img7.jpeg" data-year="2016" class="slide" onclick="openFullImg(this.src)">     
+        <img src="C:\xampp\htdocs\Eshwar\images\event8.jpg" data-year="2016" class="slide" onclick="openFullImg(this.src)">
+        <img src="C:\xampp\htdocs\Eshwar\images\event9.jpg" data-year="2015" class="slide" onclick="openFullImg(this.src)">
+        <img src="C:\xampp\htdocs\Eshwar\images\event10.jpg" data-year="2015" class="slide" onclick="openFullImg(this.src)">        
+        <img src="C:\xampp\htdocs\Eshwar\images\event11.jpg" data-year="2015" class="slide" onclick="openFullImg(this.src)">     
+        <img src="C:\xampp\htdocs\Eshwar\images\event12.jpg" data-year="2015" class="slide" onclick="openFullImg(this.src)">    
+        <img src="C:\xampp\htdocs\Eshwar\images\img1.jpeg"  data-year="2014" class="slide" onclick="openFullImg(this.src)">     
+        <img src="C:\xampp\htdocs\Eshwar\images\img2.jpeg" data-year="2014" class="slide" onclick="openFullImg(this.src)"> 
+        <img src="C:\xampp\htdocs\Eshwar\images\img3.jpeg" data-year="2014" class="slide" onclick="openFullImg(this.src)">      
+        <img src="C:\xampp\htdocs\Eshwar\images\img7.jpeg" data-year="2014" class="slide" onclick="openFullImg(this.src)">     
+        <img src="C:\xampp\htdocs\Eshwar\images\event8.jpg" data-year="2013" class="slide" onclick="openFullImg(this.src)">
+        <img src="C:\xampp\htdocs\Eshwar\images\event9.jpg" data-year="2013" class="slide" onclick="openFullImg(this.src)">
+        <img src="C:\xampp\htdocs\Eshwar\images\event10.jpg" data-year="2013" class="slide" onclick="openFullImg(this.src)">        
+        <img src="C:\xampp\htdocs\Eshwar\images\event11.jpg" data-year="2013" class="slide" onclick="openFullImg(this.src)">     
+        <img src="C:\xampp\htdocs\Eshwar\images\event12.jpg" data-year="2012" class="slide" onclick="openFullImg(this.src)">    
+        <img src="C:\xampp\htdocs\Eshwar\images\img1.jpeg"  data-year="2012" class="slide" onclick="openFullImg(this.src)">     
+        <img src="C:\xampp\htdocs\Eshwar\images\img2.jpeg" data-year="2012" class="slide" onclick="openFullImg(this.src)"> 
+        <img src="C:\xampp\htdocs\Eshwar\images\img3.jpeg" data-year="2012" class="slide" onclick="openFullImg(this.src)">      
+        <img src="C:\xampp\htdocs\Eshwar\images\img7.jpeg" data-year="2012" class="slide" onclick="openFullImg(this.src)">     
+       
+    </div>
+</div>   
+</body>
+ </html>

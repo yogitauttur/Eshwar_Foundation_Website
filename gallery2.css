@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background-color: #fff;
+}
+h3{
+    font-weight: normal;
+    font-size: 35px;
+    position: relative;
+}
+h3::before
+{
+content: '';
+position: absolute;
+width: 60px;
+height: 3px;
+background-color:orange;
+bottom: -10px;
+left:50%;
+transform: translateX(-50%);
+animation: animate 4s linear infinite;
+}
+@keyframes animate
+{
+    0%{width: 50px;}
+    50%{width: 150px;}
+    100%{width: 50px;}
+}
+.controls
+{
+display: flex;
+align-items: center;
+gap: 15px;    
+}
+button
+{
+    padding:10px 20px;
+    font-size: 18px;
+    background: white;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 3px 3px 3px 3px rgba(245, 142, 7, 0.2);
+}
+.controls button:hover
+{
+    border-bottom: 3px solid black;
+}
+.controls button.active
+{
+    background: orange;
+}
+.container
+{
+width: 100%;
+right: 2%;
+left: 15%;
+text-align: center;
+}
+
+.gallery{
+    width:95%;
+    margin: auto;
+    justify-items: center;
+    display: grid;
+  padding-top: 2%;
+    padding-bottom: 2%;
+    grid-template-columns: repeat(4,1fr);
+   grid-gap:20px
+ /*  grid-row-gap: 20px;
+   
+    grid-column-gap:auto ;
+    */
+}
+.gallery img{
+    height:100%;
+    width:100%;
+    cursor:pointer;
+    border-radius: 5%;
+}
+.gallery img:hover{
+    border: 4px solid orange;
+    box-shadow: 0 32px 75px rgba(68,77,136,0.2);
+    border-radius: 8%;
+    }
+
+.full-img
+{
+    width:100%;
+    height:100vh;
+    position :fixed;
+    background: rgba(0,0,0,0.9);
+    top:0;
+    left:0;
+    display:none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.full-img img
+{
+ width:90%;   
+ max-width: 500px;
+}
+.full-img span{
+    position: absolute;
+    top: 5%;
+    right:5%;
+    font-size: 30px;
+    background: rgba(0,0,0,0.9);
+    color:#fff;
+    cursor: pointer;
+}
+.container button{
+    background: none;
+    border: none;
+    background-color: none;
+}
+.prev
+{
+    position: absolute;
+    background:none;
+    border-radius: none;
+    left:10%;
+    color:#fff;
+    background: rgba(0,0,0,0.9);
+    font-size: 50px;
+}
+.next
+{
+position: absolute;
+    right:10%;
+    background: none;
+    color:#fff;
+    font-size: 50px;
+}
