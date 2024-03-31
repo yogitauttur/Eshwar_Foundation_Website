@@ -1,0 +1,188 @@
+<html>
+    <head>
+    <title>Login and Registration form</title>
+    <link rel="stylesheet" href="don.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head> 
+    <body>
+
+        
+        
+
+        <br>
+
+        <h1 style="color: orangered; margin-left: 600px; margin-top: 30px;">Eshwar Foundation</h1>
+    
+        <div class="rani">
+            
+        
+            <div class="form-box">
+                <img src="images/don1img.png">
+                <div class="btn-box">
+                    <div id="btn3"></div>
+                    <button type="button" class="toggle-btn1" onclick="login()">STEP 1<br>Personal Details</button>
+                    <button type="button" class="toggle-btn1" onclick="register()">STEP 2<br>Select Payment Method</button>
+                    <button type="button" class="toggle-btn1" onclick="register()">STEP 2<br>Donation Submited</button>
+                </div>
+                <h2 style="color: #2d3e3f; float: left; margin-left: 270px;">Online Donation</h2>
+                <form method="POST" id="login" class="container">
+                    <div class="box_don">
+                        <label for="firstName" class="fl fontLabel"> Full Name* </label>
+                              <div class="new iconBox">
+                          <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                        </div>
+                              <div class="fr">
+                                      <input type="text" name="firstName" id="name" placeholder="Full Name*"
+                            class="textBox" autofocus="on" required>
+                              </div>
+                              <div class="clr"></div>
+                          </div>
+                          <!--First name-->
+              
+              
+              
+                          <!---Phone No.------>
+                          <div class="box_don">
+                        <label for="phone" class="fl fontLabel"> Phone No.* </label>
+                              <div class="fl iconBox"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
+                              <div class="fr">
+                                      <input type="text" required id="phone_no" name="phoneNo" maxlength="10" placeholder="Phone No.*" class="textBox">
+                              </div>
+                              <div class="clr"></div>
+                          </div>
+                          <!---Phone No.---->
+                     
+                          <!---Email ID---->
+                          <div class="box_don">
+                            <label for="email" class="fl fontLabel"> Email ID* </label>
+                                  <div class="fl iconBox"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                                  <div class="fr">
+                                          <input type="email" required id="email" name="email" placeholder="Email Id*" class="textBox">
+                                  </div>
+                                  <div class="clr"></div>
+                              </div>
+                              <!--Email ID----->
+                  
+                  
+                              
+                  
+                              <!---Gender----->
+                              <div class="box radio">
+                            <label for="gender" class="fl fontLabel"> Gender* </label>
+                                      <input type="radio" name="Gender" value="Male" required> Male &nbsp; &nbsp; &nbsp;
+                                      <input type="radio" name="Gender" value="Female" required> Female
+                              </div>
+                              <!---Gender--->
+
+              
+                          
+
+                          
+                      <!--Address-->
+                      <div class="box_don" >
+                        <label for="address" class="fl fontLabel"> Address* </label>
+                              <div class="fl iconBox"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                              <div class="fr">
+                                      <input type="text" required id="add" name="address" placeholder="Address*" class="textBox">
+                              </div>
+                              <div class="clr"></div>
+                          </div>
+
+                          <div class="box_don" >
+                            <label for="address" class="fl fontLabel"> State* </label>
+                                  <div class="fl iconBox"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                                  <div class="fr">
+                                          <input type="text" required id="state" name="address" placeholder="State*" class="textBox">
+                                  </div>
+                                  <div class="clr"></div>
+                              </div>
+
+                              <div class="box_don" >
+                                <label for="address" class="fl fontLabel"> City* </label>
+                                      <div class="fl iconBox"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                                      <div class="fr">
+                                              <input type="text" required id="city" name="address" placeholder="City*" class="textBox">
+                                      </div>
+                                      <div class="clr"></div>
+                                  </div>
+                    <!--Address-->
+
+                          
+                          
+
+                              
+                    <!---Pincode------>
+                    <div class="box_don">
+                        <label for="password" class="fl fontLabel"> Pincode*</label>
+                              <div class="fl iconBox"><i class="fa fa-key" aria-hidden="true"></i></div>
+                              <div class="fr">
+                                      <input type="text" required id="pin" name="pincode" placeholder="Pincode*" class="textBox">
+                              </div>
+                              <div class="clr"></div>
+                          </div>
+                          <!---Pincode---->
+              
+              
+                          <!--Terms and Conditions
+                            <div class="box terms">
+                                  <input type="checkbox" name="Terms" required> &nbsp; I accept the terms and conditions
+                          </div>------>
+                          
+                          <!--Terms and Conditions------>
+              
+              
+              
+                          <!---Submit Button------>
+                          <div class="box_don">
+                                  <input type="Submit" name="Submit" class="submit" value="SUBMIT" onclick="register()">
+                          </div>
+                </form>
+                <form method="POST" id="register"class="container">
+                    <h2 style="color: aliceblue;"> Donate Method</h2>
+                    <button type="submit" name="submit" class="submit" style="left: 50px;">Donate</button>
+                </form>
+            </div>
+        </div>
+   </body> 
+   <script>
+    var x=document.getElementById("login");
+    var y=document.getElementById("register");
+    var z=document.getElementById("btn");
+
+    var n=document.getElementById("name");
+    var phone_no=document.getElementById("phone_no");
+    var email=document.getElementById("email");
+    var add=document.getElementById("add");
+    var state=document.getElementById("state");
+    var city=document.getElementById("city");
+    var pin=document.getElementById("pin");
+
+    function register(){
+
+    if(n.value== null || n.value=="" || phone_no.value==null || phone_no.value==""|| email.value==null || email.value=="" || add.value==null || add.value=="" || state.value==null || state.value=="" || city.value==null || city.value=="" || pin.value==null || pin.value=="")
+    {
+        alert("please fill all required fields");
+        
+       
+        
+    }
+    else
+    {
+      
+       x.style.left= "-400px";
+       y.style.left= "450px";
+       z.style.left= "200px";
+    }
+    }
+
+    function login(){
+       x.style.left= "450px";
+       y.style.left= "1750px";
+       z.style.left= "0";
+    }
+
+
+   </script>   
+</html>
