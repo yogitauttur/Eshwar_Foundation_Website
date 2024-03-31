@@ -1,0 +1,158 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="demo.css">
+  </head>
+  <body>
+
+    <div class="top-bar">
+            <img src="images/n.PNG">
+        </div>
+
+        <nav>
+            
+           
+            <ul class="menu">
+                
+                <li><a href="index.html">Home</a></li>
+
+                <div class="dropdown">
+                    <li><a href="#">About_Us</a></li>
+                    <div class="dropdown-content">
+                        <a href="member.html">Members</a>
+                        <a href="#">Doners</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                <li><a href="a">Activities</a></li>
+                <div class="dropdown-content">
+                    <a href="#">Scholarship</a>
+                    <a href="events.html">Science Center</a>
+                </div>
+                </div>
+
+                <div class="dropdown">
+                    <li><a href="a">Events</a></li>
+                    <div class="dropdown-content">
+                        <a href="#">Upcoming Events</a>
+                        <a href="Past_Events.html">Past Events</a>
+                        
+                    </div>
+                </div>
+                <li><a href="gallery2.html">Gallary</a></li>
+
+                <div class="dropdown">
+                    <li><a href="a">Publications</a></li>
+                    <div class="dropdown-content">
+                        <a href="newstories.html">News and Stories</a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <li><a href="contactpage.html">Contact</a></li>
+                <li><button class="donate" style="margin-right: 20px;"><a href="don.html">Donate</a></button></li>
+            </ul>
+        </nav>
+
+        
+        <div class="main-panel">
+          <div class="content">
+            <div class="container-fluid"> 
+              <div class="row">
+                <div class="col-md-6">
+                    <br><i><h3 style="color: orange; text-align: center;">Eshwar Educational Scholarship Application Form</h3></i><br>
+								<div class="card">
+                      <div class="card-header" style="background-color: orange;">
+                      <div class="card-title" >Instructions</div>
+                      </div>
+                      <div class="form-group has-success"><br>
+                        <h4 style="padding-left: 5%;">Eligible Criteria</h4>
+                          <div class="content"><br>
+                            <ul style="padding-left: 8%;">
+                              <li> 60% criteria in 10th/12th & last year exams (exceptions on case to case,<br>repeaters can also apply).</li>
+                              <li>Currently enrolled in ITI, Diploma (Tech & Pharma), Engineering, BCA, MCA.</li>
+                              <li> Telugu Speaking (mother tongue).</li>
+                              <li> Financially Weak.</li>
+                              <li> Extra achievements or volunteering will be preferred for repeat eshwar<br> scholarship applicants.</li>
+                            </ul>
+                          </div><br>
+                        <form style="padding-left: 5%;">
+
+                          <div><input type="checkbox" onchange="document.getElementById('btn').disabled=!!this.check;"> 
+
+                            <label for="option-1"> I Agree Terms and Conditions</label></div>
+                          <a href="personal.html">
+                          <button disabled="true" id="btn">Continue</button></a>
+                          
+                          </form>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <footer>
+    <div class="footerContainer">
+        <div class="socialicons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>   
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Our Team</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2023;Designed by<span class="designer">Yogita | Tejaswini | Ushahsri | Rani </p>
+    </div>
+    </footer>
+
+</body>
+
+<script>
+  function enable()
+  {
+    var check=document.getElementById("check");
+    var btn=document.getElementById("btn");
+    if(check.checked)
+    {
+        btn.removeAttribute("disabled");
+
+        
+    }
+    else
+    {
+        btn.disabled="true";
+    }
+  }
+
+  function open()
+  {
+    window.location="personal.html";
+
+  }
+
+</script>
+</html>
+
